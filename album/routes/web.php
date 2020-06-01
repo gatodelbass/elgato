@@ -19,8 +19,20 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+//cards
+Route::get('/create_card', 'CardController@create')->name('create_card');
+Route::get('/see_cards', 'CardController@index')->name('see_cards');
+Route::post('submit_create_card', 'CardController@save');
+Route::get('/try', 'CardController@try')->name('try');
+Route::get('/my_cards', 'CardController@my_cards')->name('my_cards');
+Route::get('trade/{card_id}', 'CardController@trade')->name('trade');
+
+
+
+

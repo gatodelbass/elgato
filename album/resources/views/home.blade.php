@@ -14,7 +14,27 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    
+                    <div>
+
+                    </div>
+
+                    <div>
+                        <h2><a href="{{ URL::route('create_card') }}">Create new card</a></h2>
+                    </div>
+                    <div>
+                        <h2><a href="{{ URL::route('see_cards') }}">See All Cards</a></h2>
+                    </div>
+
+                    <div>
+                        <h2><a href="{{ URL::route('try') }}">Get a card for me!</a></h2>
+                    </div>
+
+                    <div>
+                        <h2><a href="{{ URL::route('my_cards') }}">See My Cards</a></h2>
+                    </div>
+
+
                 </div>
             </div>
         </div>
