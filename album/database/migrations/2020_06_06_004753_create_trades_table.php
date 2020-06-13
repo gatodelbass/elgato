@@ -16,7 +16,7 @@ class CreateTradesTable extends Migration
         Schema::create('trades', function (Blueprint $table) {
             $table->id();
             $table->integer('user_card_posted');
-            $table->integer('user_card_offered')->nullable();
+            $table->integer('user_card_offered')->nullable(); 
             $table->integer('old_owner');
             $table->integer('new_owner')->nullable();
             $table->string('status');
