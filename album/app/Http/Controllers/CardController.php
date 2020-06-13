@@ -46,6 +46,7 @@ class CardController extends Controller
             ->join('cards', 'user_cards.card_id', '=', 'cards.id')
             ->where('user_cards.user_id', '=', $user_id)
             ->orderBy('rarity', 'asc')
+            ->orderBy('name', 'asc')
             ->get();
 
         return view('my_cards')
