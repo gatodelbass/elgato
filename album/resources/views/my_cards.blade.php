@@ -31,7 +31,7 @@
                             <br>                            
                             <span class="badge badge-pill badge-warning">{{$my_card->cost}} Oros</span>
                             <br>
-                            <a href="{{ URL::route('trade', $my_card->id) }}">Trade!</a>
+                            <a href="{{ URL::route('post_card', $my_card->id) }}">Trade this card</a>
                         </p>                                
                         
                     </div>

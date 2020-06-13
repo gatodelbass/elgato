@@ -31,8 +31,10 @@ Route::get('/see_cards', 'CardController@index')->name('see_cards');
 Route::post('submit_create_card', 'CardController@save');
 Route::get('/try', 'CardController@try')->name('try');
 Route::get('/my_cards', 'CardController@my_cards')->name('my_cards');
-Route::get('trade/{card_id}', 'CardController@trade')->name('trade');
 
+
+//trades
+Route::get('post_card/{card_id}', 'TradeController@post_card')->name('post_card');
 
 
 

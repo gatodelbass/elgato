@@ -34,6 +34,23 @@
                         <h2><a href="{{ URL::route('my_cards') }}">See My Cards</a></h2>
                     </div>
 
+                    <div>   
+                        <p class="yellow">sdfsfsf</p>
+
+
+                        <h1>Example heading <span class="badge badge-info">New</span></h1>
+
+                    </div>
+
+                    <span class="badge badge-primary">Primary</span>
+<span class="badge badge-secondary">Secondary</span>
+<span class="badge badge-success">Success</span>
+<span class="badge badge-danger">Danger</span>
+<span class="badge badge-warning">Warning</span>
+<span class="badge badge-info">Info</span>
+<span class="badge badge-light">Light</span>
+<span class="badge badge-dark">Dark</span>
+
 
                 </div>
             </div>
