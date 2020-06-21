@@ -110,7 +110,7 @@ class CardController extends Controller
 
         Log::debug($request->image->extension());    
 
-        $request->image->storeAs('public/images', $request->card_name . "_" . $now->format('Y-m-d') . "." . $request->image->extension());
+        $request->image->storeAs('public/images/cards', $request->card_name . "_" . $now->format('Y-m-d') . "." . $request->image->extension());
 
         //return view('create_card');
     }
