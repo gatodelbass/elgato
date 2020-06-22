@@ -17,7 +17,7 @@
                         <i class="far fa-star"></i>
                     @endfor
                 </p>
-                <img src="{{ url('storage/images/'.$random_card->img_route) }}" class="card-img-top" alt="..." >
+                <img src="{{ url('storage/images/cards/'.$random_card->img_route) }}" class="card-img-top" alt="..." >
                                             
                 <p class="justify" >
                     {{$random_card->name}}

@@ -36,5 +36,8 @@ Route::get('/my_cards', 'CardController@my_cards')->name('my_cards');
 //trades
 Route::get('post_card/{card_id}', 'TradeController@post_card')->name('post_card');
 
+//admin
+Route::get('/admin', 'AdminController@home')->name('admin');
+
 
 

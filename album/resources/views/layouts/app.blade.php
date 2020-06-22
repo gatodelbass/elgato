@@ -40,7 +40,7 @@
                             <a class="navbar-brand" href="{{ URL::route('try') }}">Reclamar</a>
                         </li>
                         <li>
-                            <a class="navbar-brand" href="">Admin</a>
+                            <a class="navbar-brand" href="{{ URL::route('admin') }}">Admin</a>
                         </li>
                     </ul>
 
@@ -58,9 +58,23 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
+
+                                <div>
+
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                        {{ Auth::user()->name }} 
+
+                                        <span class="caret">
+                                            <img src="{{ url('storage/images/other/1ea873d7c31783872471262b002c6a31.jpg') }}" alt="Sample" width="50" height="50">
+                                        </span>
+
+                                    </a>
+
+
+                                </div>
+
+
+                                
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"

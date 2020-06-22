@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 
-class CardController extends Controller
+class AdminController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -28,12 +28,10 @@ class CardController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function home()
     {
-
-        $all_cards = Card::all();
-        return view('see_cards')
-                ->with('all_cards', $all_cards);
+        Log::debug("sdf");        
+        return view('admin/admin');
     }
 
 
@@ -83,7 +81,11 @@ class CardController extends Controller
 
     public function trade($card_id)
     {   
-        Log::debug("trade " . $card_id);        
+        Log::debug("trade " . $card_id);
+
+        
+
+        
     }
 
 
@@ -108,7 +110,7 @@ class CardController extends Controller
 
         $request->image->storeAs('public/images/cards', $request->card_name . "_" . $now->format('Y-m-d') . "." . $request->image->extension());
 
-        return view('home');
+        //return view('create_card');
     }
 
     /**
